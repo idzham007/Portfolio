@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ahmad Idzham — Senior Analytics Cloud Associate | FP&amp;A | Power BI</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ahmad Idzham — Enterprise Intelligence | FP&amp;A | Analytics Cloud | Power BI</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{
     --bg:#000000;
@@ -383,316 +384,452 @@
     .nav-links{gap:18px;}
     .nav-links a{font-size:0.72rem;}
   }
+
+  /* LinkedIn-style project portfolio */
+  .linkedin-projects{
+    max-width:900px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .li-project{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:26px 28px;
+    transition:transform .25s ease,border-color .25s ease,background .25s ease;
+  }
+  .li-project:hover{
+    transform:translateY(-2px);
+    border-color:rgba(41,151,255,.35);
+  }
+  .li-project-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+    margin-bottom:12px;
+  }
+  .li-project-title{
+    font-size:1.12rem;
+    font-weight:650;
+    letter-spacing:-0.01em;
+    line-height:1.35;
+  }
+  .li-project-meta{
+    margin-top:5px;
+    color:var(--text-faint);
+    font-size:.78rem;
+    line-height:1.45;
+  }
+  .li-project p{
+    color:#c7c7cc;
+    font-size:.93rem;
+    line-height:1.65;
+    max-width:76ch;
+    margin:0;
+  }
+  .li-badge{
+    flex:0 0 auto;
+    font-size:.68rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--accent);
+    border:1px solid rgba(41,151,255,.25);
+    border-radius:100px;
+    padding:6px 10px;
+    white-space:nowrap;
+  }
+  .li-project .tags{
+    margin-top:17px;
+  }
+  @media(max-width:650px){
+    .li-project{padding:22px;}
+    .li-project-top{flex-direction:column;gap:10px;}
+    .li-badge{align-self:flex-start;}
+  }
 </style>
 </head>
 <body>
-
 <nav class="topnav">
-  <div class="nav-inner">
-    <div class="nav-brand">Ahmad Idzham</div>
-    <div class="nav-links">
-      <a href="#beyond-pbi">Automation</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-    </div>
-  </div>
-</nav>
-
-<div class="wrap">
-
-  <header class="hero">
-    <p class="eyebrow">FP&amp;A · Analytics Cloud · Business Intelligence · Power BI</p>
-    <h1 class="name"><span>Ahmad Idzham</span></h1>
-    <p class="role-line">FP&amp;A professional building <strong>enterprise analytics solutions</strong> that turn complex financial and organisational data into decision-ready insights — from star-schema models and DAX to executive dashboards across <strong>16 business units</strong>.</p>
-    <div class="contact-row">
-      <a href="mailto:ahmadidzham007@gmail.com">ahmadidzham007@gmail.com</a>
-      <span class="dot">·</span>
-      <span>+6019-679 8491</span>
-      <span class="dot">·</span>
-      <a href="https://linkedin.com/in/ahmadidzhammohaiyidin" target="_blank" rel="noopener">LinkedIn</a>
-      <span class="dot">·</span>
-      <span>Rawang, Selangor, MY</span>
-    </div>
-  </header>
-
-  <section id="pbi-work">
-    <div class="section-head reveal">
-      <p class="eyebrow">Power BI</p>
-      <h2>Dashboards, built to be trusted.</h2>
-      <p class="sub">Enterprise-grade Power BI, from data model to boardroom.</p>
-    </div>
-    <div class="feature-grid">
-      <div class="feature reveal">
-        <div class="cat">Finance · Enterprise</div>
-        <div class="num">P&amp;L Dashboard</div>
-        <div class="label">Monthly financial performance across 16 business units, built for exec visibility.</div>
-        <div class="tags"><span>Star-schema</span><span>DAX</span><span>Power Query</span></div>
-      </div>
-      <div class="feature reveal">
-        <div class="cat">Finance · Budgeting</div>
-        <div class="num">CAPEX Dashboard</div>
-        <div class="label">Real-time budget consumption, utilisation and expenditure tracking by department.</div>
-        <div class="tags"><span>Power BI</span><span>DAX</span></div>
-      </div>
-      <div class="feature reveal">
-        <div class="cat">Internal · Enterprise Intelligence</div>
-        <div class="num">QIVO People Intelligence</div>
-        <div class="label">Competency assessment data turned into leadership-readiness and workforce intelligence.</div>
-        <div class="tags"><span>Power BI App</span><span>RLS</span></div>
-      </div>
-      <div class="feature reveal">
-        <div class="cat">Freelance · HR Analytics</div>
-        <div class="num">Jaya Grocer Dashboard</div>
-        <div class="label">Nationwide employee satisfaction, broken down by outlet, department and demographic.</div>
-        <div class="tags"><span>Power BI</span><span>Nationwide rollout</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="beyond-pbi" class="alt">
-    <div class="section-head reveal">
-      <p class="eyebrow">Beyond Power BI</p>
-      <h2>Automation beyond the dashboard.</h2>
-      <p class="sub">Turning repetitive finance workflows and reporting into structured, scalable processes.</p>
-    </div>
-    <div class="feature-grid">
-      <div class="feature reveal">
-        <div class="cat">Automation · Treasury Ops</div>
-        <div class="num">Full Day → One Click</div>
-        <div class="label">Automated recurring finance email distribution and file routing, including bulk tenant billing and invoice communications across ~8 monthly workflows.</div>
-        <div class="tags"><span>Power Automate</span><span>Email automation</span></div>
-      </div>
-      <div class="feature reveal">
-        <div class="cat">Finance · Executive Reporting</div>
-        <div class="num">Management Accounting Dashboard</div>
-        <div class="label">Built EXCHANGE106's first proper Management Accounting Dashboard, translating financial data into executive-ready management insights.</div>
-        <div class="tags"><span>Company-first build</span><span>C-suite facing</span></div>
-      </div>
-      <div class="feature reveal">
-        <div class="cat">Process · Excel</div>
-        <div class="num">Raw Data → Reporting, Structured</div>
-        <div class="label">Improved finance reporting templates and structured recurring reporting flows from raw data through final management outputs.</div>
-        <div class="tags"><span>Excel</span><span>Process design</span></div>
-      </div>
-      <div class="feature reveal">
-        <div class="cat">Automation · Forecasting</div>
-        <div class="num">2025–2030 Forecasting</div>
-        <div class="label">Built forecasting and scenario models supporting long-term planning, leasing analysis and cash-flow visibility.</div>
-        <div class="tags"><span>Excel VBA</span><span>Revenue forecasting</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="summary">
-    <div class="summary-grid">
-      <div class="reveal">
-        <p class="eyebrow" style="text-align:left;">About</p>
-        <h2 style="margin-bottom:22px;">Where finance meets the model.</h2>
-        <p>An Actuarial Science graduate who moved into corporate finance and found that the most valuable skill was not just understanding the numbers, but building the analytical layer that makes those numbers useful. My work has grown from treasury and reporting into FP&amp;A, enterprise Power BI and organisational analytics.</p>
-        <p>Today I build enterprise analytics solutions across Finance, HR and BPI — combining dimensional data modelling, DAX, Power Query, Row-Level Security, Power BI Apps, forecasting and automation to turn business requirements into management-ready insights and decision-support tools.</p>
-      </div>
-      <div class="stat-strip reveal">
-        <div class="stat"><div class="n">3+ yrs</div><div class="d">Finance &amp; BI, from treasury to enterprise dashboards</div></div>
-        <div class="stat"><div class="n">16</div><div class="d">Business units covered by P&amp;L Power BI reporting</div></div>
-        <div class="stat"><div class="n">~40%</div><div class="d">Reduction in monthly reporting turnaround through VBA automation</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience" class="alt">
-    <div class="section-head reveal">
-      <p class="eyebrow">2024 — PRESENT</p>
-      <h2>Experience</h2>
-    </div>
-    <div class="timeline">
-<div class="role reveal">
-        <div class="role-meta">
-          <div><span class="role-title">Senior Executive — Enterprise Intelligence</span><div class="role-co">Mulia Property Development — BPI &amp; Change Management</div></div>
-          <div class="role-date">Sep 2026 — Present</div>
-        </div>
-        <ul>
-          <li>Develop analytical datasets, models and dashboards by integrating workforce, performance and organisational data from multiple sources.</li>
-          <li>Perform data preparation, transformation, validation and analysis to identify trends, relationships, anomalies and underlying drivers.</li>
-          <li>Translate business questions into analytical requirements and deliver management-ready insights, recommendations and decision-support materials.</li>
-          <li>Apply scenario analysis, benchmarking and intervention measurement to support evidence-based organisational decisions.</li>
-        </ul>
-      </div>
-
-      
-      <div class="role reveal">
-        <div class="role-meta">
-          <div><span class="role-title">FP&amp;A Executive — Corporate Finance</span><div class="role-co">Mulia Property Development (EXCHANGE 106), Kuala Lumpur</div></div>
-          <div class="role-date">May 2025 — Aug 2026</div>
-        </div>
-        <ul>
-          <li>Engineered and deployed enterprise Power BI solutions supporting Finance, HR, BPI and executive management, using Power Query, star-schema modelling and DAX.</li>
-          <li>Built P&amp;L dashboards covering 16 business units and CAPEX dashboards for budget consumption, utilisation and expenditure analysis.</li>
-          <li>Published Power BI Apps with Row-Level Security, centralising management reporting with controlled department-level access.</li>
-          <li>Automated a centralised financial data model using Excel VBA, integrating multiple financial sources and reducing monthly reporting turnaround by roughly 40%.</li>
-          <li>Built ~8 recurring Power Automate workflows for finance processes, including bulk email distribution and file routing, turning a full-day manual process into one click.</li>
-          <li>Formulated 2025–2030 financial forecasting and scenario models supporting long-term planning, leasing analysis and management decisions.</li>
-        </ul>
-      </div>
-
-      <div class="role reveal">
-        <div class="role-meta">
-          <div><span class="role-title">People Intelligence Consultant</span><div class="role-co">EXCHANGE 106 — Internal BPI &amp; Change Management project</div></div>
-          <div class="role-date">2025</div>
-        </div>
-        <ul>
-          <li>Designed the QIVO People Intelligence Dashboard, translating competency assessment data into executive-level workforce intelligence.</li>
-          <li>Built scalable Power BI semantic models using dimensional modelling and star-schema structures for workforce capability, leadership readiness and competency-gap analysis.</li>
-        </ul>
-      </div>
-
-      <div class="role reveal">
-        <div class="role-meta">
-          <div><span class="role-title">Business Intelligence Consultant (Freelance)</span><div class="role-co">Jaya Grocer — HR Analytics</div></div>
-          <div class="role-date">Jul — Nov 2025</div>
-        </div>
-        <ul>
-          <li>Built a nationwide Power BI Employee Satisfaction dashboard covering all Jaya Grocer outlets, with analysis by outlet, department and demographic.</li>
-          <li>Transformed and recategorised survey responses into Leadership, Teamwork, Engagement, Job Satisfaction and Benefits reporting dimensions.</li>
-          <li>Delivered management-ready visual insights through iterative stakeholder review cycles.</li>
-        </ul>
-      </div>
-
-      <div class="role past reveal">
-        <div class="role-meta">
-          <div><span class="role-title">Finance Associate — Group Reporting</span><div class="role-co">Prasarana Malaysia Berhad, Petaling Jaya</div></div>
-          <div class="role-date">Dec 2024 — May 2025</div>
-        </div>
-        <ul>
-          <li>Prepared monthly financial analysis and reporting packs for CFO presentations, supporting management reporting and decision-making.</li>
-          <li>Maintained SAP financial master data governance and supported structured financial reporting.</li>
-        </ul>
-      </div>
-
-      <div class="role past reveal">
-        <div class="role-meta">
-          <div><span class="role-title">Finance Associate — Group Treasury &amp; Budget</span><div class="role-co">Prasarana Malaysia Berhad, Petaling Jaya</div></div>
-          <div class="role-date">Oct — Dec 2024</div>
-        </div>
-        <ul>
-          <li>Supported Annual Budget Planning (ABP 2025), CAPEX budgeting and Ministry of Finance reporting.</li>
-          <li>Prepared analysis and presentation materials for Board Finance Committee discussions.</li>
-        </ul>
-      </div>
-
-      <div class="role past reveal">
-        <div class="role-meta">
-          <div><span class="role-title">Intern — Group Treasury &amp; Budget</span><div class="role-co">Prasarana Malaysia Berhad</div></div>
-          <div class="role-date">Mar — Jul 2024</div>
-        </div>
-        <ul>
-          <li>Built a long-term Debt Maturity Profile (2024–2053) for multi-billion-ringgit Sukuk facilities using Excel VBA.</li>
-          <li>Supported treasury cash-flow monitoring, debt management and structured financial analysis.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="section-head reveal">
-      <p class="eyebrow">Capabilities</p>
-      <h2>Skills</h2>
-    </div>
-    <div class="skill-matrix reveal">
-      <div class="skill-cat">
-        <h3>Business Intelligence</h3>
-        <div class="chip-row">
-          <span class="chip">Power BI</span><span class="chip">Power BI Service</span><span class="chip">Power BI Apps</span><span class="chip">DAX</span><span class="chip">Power Query</span><span class="chip">Data Modelling</span><span class="chip">Star Schema</span><span class="chip">RLS</span><span class="chip">ETL</span>
-        </div>
-      </div>
-      <div class="skill-cat">
-        <h3>Financial Analytics</h3>
-        <div class="chip-row">
-          <span class="chip">FP&amp;A</span><span class="chip">Budgeting</span><span class="chip">Forecasting</span><span class="chip">Variance Analysis</span><span class="chip">Performance Analytics</span><span class="chip">KPI Development</span>
-        </div>
-      </div>
-      <div class="skill-cat">
-        <h3>Automation</h3>
-        <div class="chip-row">
-          <span class="chip">Excel</span><span class="chip">VBA</span><span class="chip">Power Automate</span><span class="chip">Reporting Automation</span>
-        </div>
-      </div>
-      <div class="skill-cat">
-        <h3>Programming</h3>
-        <div class="chip-row">
-          <span class="chip">SQL (Basic)</span><span class="chip">R</span><span class="chip">C++</span><span class="chip">HTML</span>
-        </div>
-      </div>
-      <div class="skill-cat">
-        <h3>ERP &amp; Languages</h3>
-        <div class="chip-row">
-          <span class="chip">SAP ERP</span><span class="chip">AI / Big Data Familiarity</span><span class="chip">Malay — Native</span><span class="chip">English — Proficient</span><span class="chip">Korean — Intermediate</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="alt">
-    <div class="section-head reveal">
-      <p class="eyebrow">Research</p>
-      <h2>Projects</h2>
-    </div>
-    <div class="project-card reveal">
-      <div class="cat">Final Year Project · 2024</div>
-      <h3>ESG vs Non-ESG Portfolio Performance Analysis</h3>
-      <p>Comparative analysis of ESG and non-ESG portfolio performance across Southeast Asian equity markets, using R-based forecasting to evaluate volatility, risk-return characteristics and portfolio resilience.</p>
-      <div class="project-meta">
-        <span>Market: SEA Equities</span>
-        <span>Tooling: R / Forecasting</span>
-        <span>Feb 2024</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="education">
-    <div class="section-head reveal">
-      <p class="eyebrow">Credentials</p>
-      <h2>Education &amp; Certifications</h2>
-    </div>
-    <div class="edu-grid">
-      <div class="reveal">
-        <h4 class="sub-h">Education</h4>
-        <div class="edu-item">
-          <div class="deg">B.Sc. (Hons.) Actuarial Science</div>
-          <div class="sch">Universiti Teknologi MARA, Shah Alam</div>
-          <div class="met">CGPA 3.09 · 2022–2024</div>
-        </div>
-        <div class="edu-item">
-          <div class="deg">Diploma in Actuarial Science</div>
-          <div class="sch">UiTM Cawangan Perak, Kampus Tapah</div>
-          <div class="met">CGPA 3.83 · MUET Band 4.5 · 2019–2022</div>
-        </div>
-      </div>
-      <div class="reveal">
-        <h4 class="sub-h">Certifications &amp; Awards</h4>
-        <div class="cert-item"><span class="yr">2024</span><span>PL-300 Microsoft Power BI Data Analyst Training — KPT-PACE / Trainocate</span></div>
-        <div class="cert-item"><span class="yr">2024</span><span>Recommendation for IFoA Professional Examination Exemption — CB1 Business Finance</span></div>
-        <div class="cert-item"><span class="yr">—</span><span>Program Ijazah Dalam Negara Scholarship (JPA)</span></div>
-        <div class="cert-item"><span class="yr">—</span><span>Vice Chancellor Award, UiTM Perak</span></div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <h2>Let's talk numbers.</h2>
-    <p>FP&amp;A · Analytics Cloud · Business Intelligence · Data Analytics</p>
-    <a class="cta-btn" href="mailto:ahmadidzham007@gmail.com">Get in touch →</a>
-    <div class="foot-links">
-      <a href="tel:+60196798491">+6019-679 8491</a>
-      <a href="https://linkedin.com/in/ahmadidzhammohaiyidin" target="_blank" rel="noopener">LinkedIn</a>
-      <span>Rawang, Selangor</span>
-    </div>
-  </footer>
-
+<div class="nav-inner">
+<div class="nav-brand">Ahmad Idzham</div>
+<div class="nav-links">
+<a href="#beyond-pbi">Automation</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
 </div>
-
+</div>
+</nav>
+<div class="wrap">
+<header class="hero">
+<p class="eyebrow">ENTERPRISE INTELLIGENCE · FP&amp;A · ANALYTICS CLOUD · POWER BI</p>
+<h1 class="name"><span>Ahmad Idzham</span></h1>
+<p class="role-line">Enterprise Intelligence and FP&amp;A professional building <strong>enterprise analytics solutions</strong> that turn complex financial and organisational data into decision-ready insights — from data modelling and DAX to management intelligence across <strong>16 business units</strong>.</p>
+<div class="contact-row">
+<a href="mailto:ahmadidzham007@gmail.com">ahmadidzham007@gmail.com</a>
+<span class="dot">·</span>
+<span>+6019-679 8491</span>
+<span class="dot">·</span>
+<a href="https://linkedin.com/in/ahmadidzhammohaiyidin" rel="noopener" target="_blank">LinkedIn</a>
+<span class="dot">·</span>
+<span>Rawang, Selangor, MY</span>
+</div>
+</header>
+<section id="pbi-work">
+<div class="section-head reveal">
+<p class="eyebrow">Power BI</p>
+<h2>Dashboards, built to be trusted.</h2>
+<p class="sub">Enterprise-grade Power BI, from data model to boardroom.</p>
+</div>
+<div class="feature-grid">
+<div class="feature reveal">
+<div class="cat">Finance · Enterprise</div>
+<div class="num">P&amp;L Dashboard</div>
+<div class="label">Monthly financial performance across 16 business units, built for exec visibility.</div>
+<div class="tags"><span>Star-schema</span><span>DAX</span><span>Power Query</span></div>
+</div>
+<div class="feature reveal">
+<div class="cat">Finance · Budgeting</div>
+<div class="num">CAPEX Dashboard</div>
+<div class="label">Real-time budget consumption, utilisation and expenditure tracking by department.</div>
+<div class="tags"><span>Power BI</span><span>DAX</span></div>
+</div>
+<div class="feature reveal">
+<div class="cat">Internal · Enterprise Intelligence</div>
+<div class="num">QIVO People Intelligence</div>
+<div class="label">Competency assessment data turned into leadership-readiness and workforce intelligence.</div>
+<div class="tags"><span>Power BI App</span><span>RLS</span></div>
+</div>
+<div class="feature reveal">
+<div class="cat">Freelance · HR Analytics</div>
+<div class="num">Jaya Grocer Dashboard</div>
+<div class="label">Nationwide employee satisfaction, broken down by outlet, department and demographic.</div>
+<div class="tags"><span>Power BI</span><span>Nationwide rollout</span></div>
+</div>
+</div>
+</section>
+<section class="alt" id="beyond-pbi">
+<div class="section-head reveal">
+<p class="eyebrow">Beyond Power BI</p>
+<h2>Automation beyond the dashboard.</h2>
+<p class="sub">Turning repetitive finance workflows and reporting into structured, scalable processes.</p>
+</div>
+<div class="feature-grid">
+<div class="feature reveal">
+<div class="cat">Automation · Treasury Ops</div>
+<div class="num">Full Day → One Click</div>
+<div class="label">Automated recurring finance email distribution and file routing, including bulk tenant billing and invoice communications across ~8 monthly workflows.</div>
+<div class="tags"><span>Power Automate</span><span>Email automation</span></div>
+</div>
+<div class="feature reveal">
+<div class="cat">Finance · Executive Reporting</div>
+<div class="num">Management Accounting Dashboard</div>
+<div class="label">Built EXCHANGE106's first proper Management Accounting Dashboard, translating financial data into executive-ready management insights.</div>
+<div class="tags"><span>Company-first build</span><span>C-suite facing</span></div>
+</div>
+<div class="feature reveal">
+<div class="cat">Process · Excel</div>
+<div class="num">Raw Data → Reporting, Structured</div>
+<div class="label">Improved finance reporting templates and structured recurring reporting flows from raw data through final management outputs.</div>
+<div class="tags"><span>Excel</span><span>Process design</span></div>
+</div>
+<div class="feature reveal">
+<div class="cat">Automation · Forecasting</div>
+<div class="num">2025–2030 Forecasting</div>
+<div class="label">Built forecasting and scenario models supporting long-term planning, leasing analysis and cash-flow visibility.</div>
+<div class="tags"><span>Excel VBA</span><span>Revenue forecasting</span></div>
+</div>
+</div>
+</section>
+<section id="summary">
+<div class="summary-grid">
+<div class="reveal">
+<p class="eyebrow" style="text-align:left;">About</p>
+<h2 style="margin-bottom:22px;">Where finance meets the model.</h2>
+<p>An Actuarial Science graduate who moved into corporate finance and found that the most valuable skill was not just understanding the numbers, but building the analytical layer that makes those numbers useful. My work has grown from treasury and reporting into FP&amp;A, enterprise Power BI and organisational analytics.</p>
+<p>Today I build enterprise analytics solutions across Finance, HR and BPI — combining dimensional data modelling, DAX, Power Query, Row-Level Security, Power BI Apps, forecasting and automation to turn business requirements into management-ready insights and decision-support tools.</p>
+</div>
+<div class="stat-strip reveal">
+<div class="stat"><div class="n">3+ yrs</div><div class="d">Finance &amp; BI, from treasury to enterprise dashboards</div></div>
+<div class="stat"><div class="n">16</div><div class="d">Business units covered by P&amp;L Power BI reporting</div></div>
+<div class="stat"><div class="n">~40%</div><div class="d">Reduction in monthly reporting turnaround through VBA automation</div></div>
+</div>
+</div>
+</section>
+<section class="alt" id="experience">
+<div class="section-head reveal">
+<p class="eyebrow">2024 — PRESENT</p>
+<h2>Experience</h2>
+</div>
+<div class="timeline">
+<div class="role reveal">
+<div class="role-meta">
+<div><span class="role-title">Senior Executive — Enterprise Intelligence</span><div class="role-co">Mulia Property Development — BPI &amp; Change Management</div></div>
+<div class="role-date">Sep 2026 — Present</div>
+</div>
+<ul>
+<li>Develop analytical datasets, models and dashboards by integrating workforce, performance and organisational data from multiple sources.</li>
+<li>Perform data preparation, transformation, validation and analysis to identify trends, relationships, anomalies and underlying drivers.</li>
+<li>Translate business questions into analytical requirements and deliver management-ready insights, recommendations and decision-support materials.</li>
+<li>Apply scenario analysis, benchmarking and intervention measurement to support evidence-based organisational decisions.</li>
+</ul>
+</div>
+<div class="role reveal">
+<div class="role-meta">
+<div><span class="role-title">FP&amp;A Executive — Corporate Finance</span><div class="role-co">Mulia Property Development (EXCHANGE 106), Kuala Lumpur</div></div>
+<div class="role-date">May 2025 — Aug 2026</div>
+</div>
+<ul>
+<li>Engineered and deployed enterprise Power BI solutions supporting Finance, HR, BPI and executive management, using Power Query, star-schema modelling and DAX.</li>
+<li>Built P&amp;L dashboards covering 16 business units and CAPEX dashboards for budget consumption, utilisation and expenditure analysis.</li>
+<li>Published Power BI Apps with Row-Level Security, centralising management reporting with controlled department-level access.</li>
+<li>Automated a centralised financial data model using Excel VBA, integrating multiple financial sources and reducing monthly reporting turnaround by roughly 40%.</li>
+<li>Built ~8 recurring Power Automate workflows for finance processes, including bulk email distribution and file routing, turning a full-day manual process into one click.</li>
+<li>Formulated 2025–2030 financial forecasting and scenario models supporting long-term planning, leasing analysis and management decisions.</li>
+</ul>
+</div>
+<div class="role reveal">
+<div class="role-meta">
+<div><span class="role-title">People Intelligence Consultant</span><div class="role-co">EXCHANGE 106 — Internal BPI &amp; Change Management project</div></div>
+<div class="role-date">2025</div>
+</div>
+<ul>
+<li>Designed the QIVO People Intelligence Dashboard, translating competency assessment data into executive-level workforce intelligence.</li>
+<li>Built scalable Power BI semantic models using dimensional modelling and star-schema structures for workforce capability, leadership readiness and competency-gap analysis.</li>
+</ul>
+</div>
+<div class="role reveal">
+<div class="role-meta">
+<div><span class="role-title">Business Intelligence Consultant (Freelance)</span><div class="role-co">Jaya Grocer — HR Analytics</div></div>
+<div class="role-date">Jul — Nov 2025</div>
+</div>
+<ul>
+<li>Built a nationwide Power BI Employee Satisfaction dashboard covering all Jaya Grocer outlets, with analysis by outlet, department and demographic.</li>
+<li>Transformed and recategorised survey responses into Leadership, Teamwork, Engagement, Job Satisfaction and Benefits reporting dimensions.</li>
+<li>Delivered management-ready visual insights through iterative stakeholder review cycles.</li>
+</ul>
+</div>
+<div class="role past reveal">
+<div class="role-meta">
+<div><span class="role-title">Finance Associate — Group Reporting</span><div class="role-co">Prasarana Malaysia Berhad, Petaling Jaya</div></div>
+<div class="role-date">Dec 2024 — May 2025</div>
+</div>
+<ul>
+<li>Prepared monthly financial analysis and reporting packs for CFO presentations, supporting management reporting and decision-making.</li>
+<li>Maintained SAP financial master data governance and supported structured financial reporting.</li>
+</ul>
+</div>
+<div class="role past reveal">
+<div class="role-meta">
+<div><span class="role-title">Finance Associate — Group Treasury &amp; Budget</span><div class="role-co">Prasarana Malaysia Berhad, Petaling Jaya</div></div>
+<div class="role-date">Oct — Dec 2024</div>
+</div>
+<ul>
+<li>Supported Annual Budget Planning (ABP 2025), CAPEX budgeting and Ministry of Finance reporting.</li>
+<li>Prepared analysis and presentation materials for Board Finance Committee discussions.</li>
+</ul>
+</div>
+<div class="role past reveal">
+<div class="role-meta">
+<div><span class="role-title">Intern — Group Treasury &amp; Budget</span><div class="role-co">Prasarana Malaysia Berhad</div></div>
+<div class="role-date">Mar — Jul 2024</div>
+</div>
+<ul>
+<li>Built a long-term Debt Maturity Profile (2024–2053) for multi-billion-ringgit Sukuk facilities using Excel VBA.</li>
+<li>Supported treasury cash-flow monitoring, debt management and structured financial analysis.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="skills">
+<div class="section-head reveal">
+<p class="eyebrow">Capabilities</p>
+<h2>Skills</h2>
+</div>
+<div class="skill-matrix reveal">
+<div class="skill-cat">
+<h3>Business Intelligence</h3>
+<div class="chip-row">
+<span class="chip">Power BI</span><span class="chip">Power BI Service</span><span class="chip">Power BI Apps</span><span class="chip">DAX</span><span class="chip">Power Query</span><span class="chip">Data Modelling</span><span class="chip">Star Schema</span><span class="chip">RLS</span><span class="chip">ETL</span>
+</div>
+</div>
+<div class="skill-cat">
+<h3>Financial Analytics</h3>
+<div class="chip-row">
+<span class="chip">FP&amp;A</span><span class="chip">Budgeting</span><span class="chip">Forecasting</span><span class="chip">Variance Analysis</span><span class="chip">Performance Analytics</span><span class="chip">KPI Development</span>
+</div>
+</div>
+<div class="skill-cat">
+<h3>Automation</h3>
+<div class="chip-row">
+<span class="chip">Excel</span><span class="chip">VBA</span><span class="chip">Power Automate</span><span class="chip">Reporting Automation</span>
+</div>
+</div>
+<div class="skill-cat">
+<h3>Programming</h3>
+<div class="chip-row">
+<span class="chip">SQL (Basic)</span><span class="chip">R</span><span class="chip">C++</span><span class="chip">HTML</span>
+</div>
+</div>
+<div class="skill-cat">
+<h3>ERP &amp; Languages</h3>
+<div class="chip-row">
+<span class="chip">SAP ERP</span><span class="chip">AI / Big Data Familiarity</span><span class="chip">Malay — Native</span><span class="chip">English — Proficient</span><span class="chip">Korean — Intermediate</span>
+</div>
+</div>
+</div>
+</section>
+<section class="alt" id="projects">
+<div class="section-head reveal">
+<p class="eyebrow">LinkedIn Projects</p>
+<h2>Projects that show the work.</h2>
+<p class="sub">A selected portfolio of analytics, automation, finance and business intelligence projects.</p>
+</div>
+<div class="linkedin-projects">
+<article class="li-project reveal">
+<div class="li-project-top">
+<div>
+<div class="li-project-title">People Intelligence Dashboard — Power BI</div>
+<div class="li-project-meta">Sep 2025 – Nov 2025 · Associated with EXCHANGE 106</div>
+</div>
+<span class="li-badge">People Analytics</span>
+</div>
+<p>Developed a people analytics solution to transform employee-related data into actionable management insights. Structured QIVO People Intelligence data, analysed employee characteristics and trends, and developed indicators supporting capability, motivation and workforce analysis.</p>
+<div class="tags"><span>Microsoft Power BI · </span><span>DAX · </span><span>Data Modelling · </span><span>People Analytics</span></div>
+</article>
+<article class="li-project reveal">
+<div class="li-project-top">
+<div>
+<div class="li-project-title">CAPEX Analytics Dashboard</div>
+<div class="li-project-meta">Apr 2026 – Jun 2026 · Associated with EXCHANGE 106</div>
+</div>
+<span class="li-badge">Finance</span>
+</div>
+<p>Developed Power BI reporting around CAPEX, integrating financial data into management-friendly visualisations to monitor capital expenditure, budget consumption, utilisation and expenditure requirements.</p>
+<div class="tags"><span>Microsoft Power BI · </span><span>DAX · </span><span>Power Query · </span><span>CAPEX</span></div>
+</article>
+<article class="li-project reveal">
+<div class="li-project-top">
+<div>
+<div class="li-project-title">Power Automate — Automated Billing / Invoice Email</div>
+<div class="li-project-meta">Apr 2026 – Apr 2026 · Associated with EXCHANGE 106</div>
+</div>
+<span class="li-badge">Automation</span>
+</div>
+<p>Created an automated workflow for billing and invoice email distribution to multiple tenants. Used structured source data to determine recipients and documents, reducing manual email preparation and converting a repetitive process into an automated workflow.</p>
+<div class="tags"><span>Microsoft Power Automate · </span><span>Microsoft Excel · </span><span>Workflow Automation · </span><span>Data Routing</span></div>
+</article>
+<article class="li-project reveal">
+<div class="li-project-top">
+<div>
+<div class="li-project-title">Jaya Grocer Climate Survey BI</div>
+<div class="li-project-meta">Jul 2025 – Aug 2025 · Associated with Jaya Grocer (Trendcell Sdn. Bhd.)</div>
+</div>
+<span class="li-badge">Freelance</span>
+</div>
+<p>Transformed employee climate survey results into an interactive BI solution to identify workforce sentiment, organisational strengths and areas requiring improvement. Cleaned and structured survey data, developed sentiment indicators and translated findings into management-level insights.</p>
+<div class="tags"><span>Microsoft Power BI · </span><span>DAX · </span><span>HR Analytics · </span><span>Survey Analytics · </span></div>
+</article>
+<article class="li-project reveal">
+<div class="li-project-top">
+<div>
+<div class="li-project-title">Departmental P&amp;L Dashboard — Power BI</div>
+<div class="li-project-meta">Jun 2025 – Jul 2025 · Associated with EXCHANGE 106</div>
+</div>
+<span class="li-badge">Financial Analytics</span>
+</div>
+<p>Built Power BI reporting covering 16 departments, analysing monthly revenue, OPEX, profit/loss and staff costs. Developed DAX measures and structured data relationships to identify departmental performance trends and abnormalities.</p>
+<div class="tags"><span>Microsoft Power BI · </span><span>DAX · </span><span>Star Schema · </span></div>
+</article>
+<article class="li-project reveal">
+<div class="li-project-top">
+<div>
+<div class="li-project-title">QR Asset Tagging System</div>
+<div class="li-project-meta">May 2025 – Jun 2025 · Associated with EXCHANGE 106</div>
+</div>
+<span class="li-badge">Process Improvement</span>
+</div>
+<p>Identified an opportunity to improve asset tracking and proposed a QR-based asset tagging system. Designed the asset identification structure and proposed integration with Microsoft tools, working with IT toward implementation.</p>
+<div class="tags"><span>Microsoft Lists · </span><span>Microsoft Power Apps · </span><span>Process Improvement · </span><span>Asset Management</span></div>
+</article>
+<article class="li-project reveal">
+<div class="li-project-top">
+<div>
+<div class="li-project-title">Management Accounts Dashboard</div>
+<div class="li-project-meta">Apr 2025 – Jun 2025 · Associated with EXCHANGE 106</div>
+</div>
+<span class="li-badge">Management Reporting</span>
+</div>
+<p>Converted corporate management accounts into dashboard-based reporting using Excel. Covered company-wide revenue, OPEX, P&amp;L and cash-flow performance, with visuals designed to make management reporting easier to interpret.</p>
+<div class="tags"><span>Microsoft Excel · </span><span>Data Modelling · </span><span>Management Reporting</span></div>
+</article>
+<article class="li-project reveal">
+<div class="li-project-top">
+<div>
+<div class="li-project-title">Debt Maturity Profile Model</div>
+<div class="li-project-meta">Apr 2024 – Jun 2024 · Associated with PRASARANA MALAYSIA BERHAD</div>
+</div>
+<span class="li-badge">Treasury</span>
+</div>
+<p>Developed a long-term debt maturity profile covering the company's Sukuk Murabahah programme. Mapped debt maturities from 2024–2050 and built an automated model to visualise when principal and financing obligations mature.</p>
+<div class="tags"><span>VBA Excel · </span><span>Forecasting · </span><span>Treasury · </span><span>Debt Management</span></div>
+</article>
+<article class="li-project reveal">
+<div class="li-project-top">
+<div>
+<div class="li-project-title">Final Year Project: ESG vs Non-ESG Portfolio Performance</div>
+<div class="li-project-meta">Sep 2023 – Feb 2024 · Associated with Universiti Teknologi MARA</div>
+</div>
+<span class="li-badge">Research</span>
+</div>
+<p>Evaluated ESG and non-ESG portfolio performance during the COVID-19 and post-pandemic periods across Malaysia, Singapore, Indonesia and Thailand. Used VBA and Microsoft Excel for portfolio analysis and R Studio to forecast portfolio performance for the following five years.</p>
+<div class="tags"><span>ESG · </span><span>Stock Market · </span><span>VBA · </span><span>R Studio · </span><span>Forecasting</span></div>
+</article>
+</div>
+</section>
+<section id="education">
+<div class="section-head reveal">
+<p class="eyebrow">Credentials</p>
+<h2>Education &amp; Certifications</h2>
+</div>
+<div class="edu-grid">
+<div class="reveal">
+<h4 class="sub-h">Education</h4>
+<div class="edu-item">
+<div class="deg">B.Sc. (Hons.) Actuarial Science</div>
+<div class="sch">Universiti Teknologi MARA, Shah Alam</div>
+<div class="met">2022–2024</div>
+</div>
+<div class="edu-item">
+<div class="deg">Diploma in Actuarial Science</div>
+<div class="sch">UiTM Cawangan Perak, Kampus Tapah</div>
+<div class="met">2019–2022</div>
+</div>
+</div>
+<div class="reveal">
+<h4 class="sub-h">Certifications &amp; Awards</h4>
+<div class="cert-item"><span class="yr">2024</span><span>PL-300 Microsoft Power BI Data Analyst Training — KPT-PACE / Trainocate</span></div>
+<div class="cert-item"><span class="yr">2024</span><span>Recommendation for IFoA Professional Examination Exemption — CB1 Business Finance</span></div>
+<div class="cert-item"><span class="yr">—</span><span>Program Ijazah Dalam Negara Scholarship (JPA)</span></div>
+<div class="cert-item"><span class="yr">—</span><span>Vice Chancellor Award, UiTM Perak</span></div>
+</div>
+</div>
+</section>
+<footer>
+<h2>Let's talk numbers.</h2>
+<p>FP&amp;A · Analytics Cloud · Business Intelligence · Data Analytics</p>
+<a class="cta-btn" href="mailto:ahmadidzham007@gmail.com">Get in touch →</a>
+<div class="foot-links">
+<a href="tel:+60196798491">+6019-679 8491</a>
+<a href="https://linkedin.com/in/ahmadidzhammohaiyidin" rel="noopener" target="_blank">LinkedIn</a>
+<span>Rawang, Selangor</span>
+</div>
+</footer>
+</div>
 <script>
   const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries)=>{
@@ -702,6 +839,5 @@
   }, {threshold:0.12});
   reveals.forEach(r=>io.observe(r));
 </script>
-
 </body>
 </html>
